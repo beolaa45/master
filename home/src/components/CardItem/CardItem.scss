@@ -1,0 +1,173 @@
+@import "../../sass/abstracts/variables";
+.CardItem {
+  height: 100%;
+  width: 100%;
+
+  transition: $transtion-1;
+  padding-bottom: 3rem;
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    transition: $transtion-2;
+    position: relative;
+    margin-bottom: 2rem;
+    height: 27rem;
+    -webkit-box-shadow: $box-shadow-2;
+    box-shadow: $box-shadow-2;
+    @media screen and (max-width: $max-xs) {
+      height: 50rem;
+    }
+    @media screen and (max-width: 400px) {
+      height: 40rem;
+    }
+  }
+
+  &__photo::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgba($color: #000000, $alpha: 0);
+    transition: $transtion-2;
+  }
+
+  &__photo:hover::before {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+  }
+
+  &__photo:hover {
+    background-size: 110%;
+  }
+
+  /////////button
+
+  &__button {
+    position: absolute;
+    border: none;
+    background-color: $color-white;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 15rem;
+    height: 4rem;
+
+    border-radius: 50px;
+    transform: translate(-50%, -100%);
+    transition: $transtion-1;
+    opacity: 0;
+    overflow: hidden;
+    padding-top: 0.7rem;
+    font-family: "Poppins", sans-serif, "Libre Baskerville";
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+
+  &__button:hover {
+    background-color: $color-black;
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &__photo:hover &__button {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  &__view {
+    transform: translateY(0);
+    opacity: 1;
+    transition: $transtion-1;
+  }
+
+  &__button:hover &__view {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  &__button:hover &__icon {
+    transform: translateY(-100%);
+    opacity: 1;
+    color: $color-white;
+  }
+
+  &__icon {
+    opacity: 0;
+    transition: $transtion-1;
+  }
+
+  &__buttonMobile {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+
+    height: 4rem;
+    width: 4rem;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-color: $color-white;
+    z-index: 2;
+  }
+
+  &__buttonMobile:focus {
+    outline: none;
+  }
+
+  &__iconMobile {
+    color: $color-black-2;
+  }
+
+  ///////sale
+
+  &__sale {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-red;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $color-white;
+  }
+
+  &__content {
+    text-align: center;
+    font-family: "Poppins", sans-serif, "Libre Baskerville";
+
+    &__link:link,
+    &__link:visited {
+      text-decoration: none;
+    }
+
+    &__oldPrice {
+      color: $color-grey;
+      margin-right: 1rem;
+    }
+
+    &__price {
+      color: $color-black-2;
+    }
+
+  }
+
+  &__content > * {
+    margin-bottom: 0.5rem;
+  }
+  &__content > *:last-child {
+    margin-bottom: 0;
+  }
+}

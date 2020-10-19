@@ -1,0 +1,74 @@
+/* HTML5 display-role reset for older browsers */
+@import "./sass/abstracts/variables";
+*,
+div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a:link,
+a:visited{
+    color: $color-black;
+}
+ul{
+    list-style: none;
+}
+
+// $max-lg: 1199px;
+// $max-md: 991px;
+// $max-sm: 767px;
+// $max-xs: 575px;
+.html {
+  font-size: 62.5%;
+  @media screen and (max-width: $max-lg) { 
+    font-size: 62.5%;
+  }
+  @media screen and (max-width: $max-md) {
+    font-size: 56.25%;
+  }
+  @media screen and (max-width: $max-sm) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: $max-xs) {
+    font-size: 50%;
+  }
+ 
+}
+
+body.body {
+  font-family: "Poppins", sans-serif, 'Libre Baskerville';
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+.mobile{
+    @media screen and (min-width: 992px) {
+        display: none;
+      }
+      
+}
+
+.desktop{
+    @media screen and (max-width: $max-md) {
+        display: none;
+      }
+}
+
+@import './sass/abstracts/Typographys';

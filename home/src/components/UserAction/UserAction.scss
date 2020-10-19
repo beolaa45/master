@@ -1,0 +1,47 @@
+@import "../../sass/abstracts/variables";
+.User {
+  &__list {
+    height: 100%;
+    margin-bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    height: 100%;
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  &__icon {
+    height: 100%;
+    font-size: 2rem;
+    transition: $transtion-1;
+    color: $color-black;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__basket {
+    position: absolute;
+    top: 1rem;
+    right: -0.6rem;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: $color-red;
+    padding: 0.1rem 0.5rem;
+    border-radius: 50px;
+    color: $color-white;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__icon:hover,
+  &__icon--active {
+    color: $color-red;
+  }
+}

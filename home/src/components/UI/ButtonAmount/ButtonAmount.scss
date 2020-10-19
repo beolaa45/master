@@ -1,0 +1,35 @@
+@import "../../../sass/abstracts/variables";
+.ButtonAmount {
+  max-width: 12rem;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $color-black;
+  border-radius: 50px;
+  padding: 0 1rem;
+  font-size: 1.6rem;
+
+  &__icon {
+    color: $color-black;
+  }
+
+  &__icon:hover {
+    color: $color-red;
+  }
+
+  &__amount {
+    width: 33%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__amount:focus {
+    outline: none;
+  }
+
+}

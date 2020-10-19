@@ -1,0 +1,108 @@
+@import "../../sass/abstracts/variables";
+.Header {
+  height: 7rem;
+  display: block;
+
+  background-color: $color-white;
+  &__container {
+    height: 100%;
+  }
+
+  &__navigation {
+    height: 100%;
+  }
+  &__icon {
+    height: 100%;
+  }
+
+  &__col {
+    height: 100%;
+  }
+
+  &__bars {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.8rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+  &__row {
+    height: 100%;
+  }
+  &__logo {
+    height: 100%;
+    width: 100%;
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: $color-black;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:active,
+  &__link:hover {
+    color: $color-black !important;
+    text-decoration: none;
+  }
+
+  &__user {
+    height: 100%;
+  }
+}
+
+.Form {
+  &__signin {
+    max-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
+
+.nav.nav-tabs {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  & > a {
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

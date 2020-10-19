@@ -1,0 +1,122 @@
+@import "../../../sass/abstracts/variables";
+.Button {
+  border: none;
+  width: 15rem;
+  height: 5rem;
+  font-family: "Poppins", sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--black {
+    background-color: rgba($color: $color-black, $alpha: 0.9);
+    color: $color-white;
+    transition: $transtion-1;
+  }
+  &--black:hover {
+    background-color: rgba($color: $color-black-2, $alpha: 0.9);
+  }
+
+  &--card {
+    background-color: $color-white;
+    box-shadow: $box-shadow;
+    font-weight: 600;
+    transition: $transtion-1;
+  }
+  &--card:hover {
+    background-color: $color-grey;
+    color: $color-white;
+  }
+
+  &--addToCard {
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: $color-white;
+    border: 1px solid rgba($color: #000000, $alpha: 0.5);
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    transition: $transtion-1;
+  }
+
+  &--addToCard:hover {
+    background-color: $color-black-2;
+    color: $color-white;
+  }
+
+  &--detail {
+    height: 4rem;
+    background-color: $color-black;
+    color: $color-white;
+    transition: $transtion-1;
+    border-radius: 50px;
+  }
+
+  &--detail:hover {
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-black;
+  }
+
+  &--viewCart {
+    width: 100%;
+    border-radius: 50px;
+    transition: $transtion-1;
+    font-size: 1.8rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+  }
+
+  &--checkOut {
+    width: 100%;
+    border-radius: 50px;
+    color: $color-white;
+    background-color: $color-black;
+    transition: $transtion-1;
+    font-size: 1.8rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    &:hover {
+      color: $color-black;
+      background-color: $color-white;
+      border: 2px solid $color-black;
+    }
+  }
+
+  &--page {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+
+    font-weight: 600;
+    transition: $transtion-1;
+    margin-right: 2rem;
+    color: $color-black;
+    background-color: $color-white;
+    border: 1px solid $color-black;
+
+    &:hover,
+    &.active {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  &--form{
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 1.2rem;
+      color: $color-white;
+      background-color: $color-black;
+      border-radius: .5rem;
+      width: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      &:hover{
+          background-color: $color-black-2;
+      }
+  }
+}

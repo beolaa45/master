@@ -1,0 +1,80 @@
+@import "../../sass/abstracts/variables";
+.Footer {
+  background-color: $color-grey-2;
+  padding: 8rem 0 3rem 0;
+
+  &__infor {
+    font-family: "Poppins", sans-serif, "Libre Baskerville";
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: $color-grey;
+
+    & > * {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    & > *:not(:last-child) > *:first-child {
+      margin-right: 1.5rem;
+    }
+
+    &__logo {
+      font-size: 3rem;
+      font-weight: 900;
+      color: $color-black;
+    }
+
+    &__mail a:link,
+    &__mail a:visited {
+      font-family: "Poppins", sans-serif, "Libre Baskerville";
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: $color-grey;
+    }
+
+    &__social > *:link,
+    &__social > *:visited {
+      margin-right: 2rem;
+      color: $color-grey;
+      transition: $transtion-1;
+    }
+
+    &__social > *:hover,
+    &__social > *:active {
+      color: $color-red;
+    }
+  }
+
+  &__content {
+    font-family: "Poppins", sans-serif, "Libre Baskerville";
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: $color-grey;
+
+    &__title {
+      font-size: 1.8rem;
+      color: $color-black;
+      font-weight: 600;
+      margin-bottom: 2.8rem;
+    }
+
+    &__sub:link,
+    &__sub:visited {
+      display: block;
+      color: $color-grey;
+      margin-bottom: 1rem;
+      transition: $transtion-1;
+    }
+
+    &__sub:hover,
+    &__sub:active {
+      color: $color-red;
+    }
+  }
+
+  &__col {
+    margin-bottom: 3rem;
+  }
+}

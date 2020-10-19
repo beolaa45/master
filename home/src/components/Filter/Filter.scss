@@ -1,0 +1,24 @@
+@import "../../sass/abstracts/variables";
+
+.Filter {
+  font-family: "Poppins", sans-serif, "Libre Baskerville";
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: $color-black;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__checkbox {
+      margin-right: 1rem;
+    }
+
+  }
+}

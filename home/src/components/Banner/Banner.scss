@@ -1,0 +1,54 @@
+@import "../../sass/abstracts/variables";
+
+.Banners{
+    font-family: "Poppins", sans-serif, "Libre Baskerville";
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: $color-black;
+   height: 15rem;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   position: relative;
+   
+   &__title{
+       font-size: 2.5rem;
+       font-weight: 600;
+       margin-bottom: 1rem;
+   }
+   &__box{
+    display: flex;
+
+    & > * {
+        margin-right: 1rem;
+    }
+
+    & > *:last-child {
+        margin-right: 0;
+    }
+
+    &__link:link,
+    &__link:visited{
+        text-decoration: none;
+        color: $color-black;
+        transition: $transtion-1;
+        text-transform: capitalize;
+        
+    }
+
+    &__link:hover,
+    &__link:active
+   {
+        color: $color-red;
+    }
+    &__link--active{
+        color: $color-red !important;
+    }
+   }
+}

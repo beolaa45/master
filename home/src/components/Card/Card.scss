@@ -1,0 +1,23 @@
+@import "../../sass/abstracts/variables";
+.Card {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 110%;
+
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: all 0.5s ease-in-out !important;
+
+  @media screen and (max-width: $max-lg) {
+    background-size: cover;
+  }
+  &:hover {
+    background-size: 130%;
+  }
+}

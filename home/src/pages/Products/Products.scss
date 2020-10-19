@@ -1,0 +1,70 @@
+@import "../../sass/abstracts/variables";
+.Products {
+ 
+  &__banners {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    margin-bottom: 5rem;
+    &__filter {
+      padding: 1rem 1rem 3rem 1rem;
+      border: 1px solid $color-grey;
+      margin-bottom: 5rem;
+
+      &__box {
+        padding: 2rem 0;
+        border-top: 1px solid $color-black;
+        display: flex;
+        justify-content: space-between;
+
+        &__submit {
+          border: none;
+          background-color: $color-black;
+          color: $color-white;
+          width: 8.5rem;
+          height: 3.6rem;
+          border-radius: 0.5rem;
+          transition: $transtion-1;
+
+          &.FilterOut {
+            color: $color-black;
+            background-color: $color-white;
+            border: 1px solid $color-black;
+            transition: $transtion-1;
+          }
+
+          &.FilterOut:hover {
+            color: $color-white;
+            background-color: $color-black;
+          }
+        }
+      }
+
+      & > * {
+        padding-bottom: 2rem;
+      }
+
+      & > *:last-child {
+        padding-bottom: 0rem;
+      }
+    }
+
+    &__list {
+      &__filter {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 3.6rem;
+        margin-bottom: 3rem;
+        &__sort {
+          margin-right: 1rem;
+        }
+        &__select {
+          height: 100%;
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

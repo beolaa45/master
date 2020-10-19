@@ -1,0 +1,35 @@
+@import "../../sass/abstracts/variables";
+.Heading {
+  &__primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  &__primary::before,
+  &__primary::after {
+    content: "";
+    width: 3rem;
+    height: 0.3rem;
+    background-color: $color-black;
+  }
+
+  &__primary::before {
+    margin-right: 1rem;
+  }
+
+  &__primary::after {
+    margin-left: 1rem;
+  }
+
+  &__subTitle {
+    font-family: "Libre Baskerville", sans-serif;
+    font-size: 1.6rem;
+    color: $color-grey;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../sass/abstracts/variables";
+.ShippingType {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+  border: 1px solid $color-grey;
+  padding: 2rem;
+
+  &__icon {
+    font-size: 3.5rem;
+    color: $color-grey;
+    height: 100%;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1.5rem;
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: $color-black;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subTitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-grey;
+  }
+}

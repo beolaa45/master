@@ -1,0 +1,52 @@
+.Carousel2 {
+  .slick-dots {
+    top: 0;
+    bottom: auto;
+    left: 0;
+    width: 7rem;
+    padding: 0 !important;
+    height: 80%;
+
+    background-color: transparent !important;
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+
+      & > li {
+        width: auto;
+        height: auto;
+        margin: 0;
+        opacity: 0.5;
+
+        &.slick-active {
+          opacity: 1;
+        }
+      }
+    }
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* width */
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 50px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: rgb(211, 210, 210);
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}

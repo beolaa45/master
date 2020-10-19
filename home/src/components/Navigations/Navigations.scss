@@ -1,0 +1,22 @@
+@import "../../sass/abstracts/variables";
+.Navigations {
+  height: 100%;
+
+  &----sidedrawer {
+    height: auto;
+  }
+  &__list {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+
+    &--siderdrawer {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+}

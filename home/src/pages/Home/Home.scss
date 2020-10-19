@@ -1,0 +1,116 @@
+@import "../../sass/abstracts/variables";
+.Banner {
+  margin-bottom: 5rem;
+  &__box {
+    height: 80rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    background-color: #cccccc;
+  }
+  @media screen and (max-width: 1200px) {
+    &__box {
+      height: 60rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__box {
+      height: 50rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__box {
+      height: 40rem;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    &__box {
+      height: 26rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.Shipping {
+  margin-bottom: 2rem;
+  &__content {
+    width: 100%;
+    height: 9rem;
+  }
+  @media screen and (max-width: $max-md) {
+    &__content {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.Category {
+  margin-bottom: 10rem;
+  &__card {
+    width: 100%;
+    height: 21.5rem;
+    overflow: hidden;
+
+    @media screen and (max-width: $max-sm) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.BestSeller {
+  padding-bottom: 10rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  &__card {
+    padding-bottom: 1rem;
+  }
+}
+
+.Subscribe {
+  background-color: $color-grey-2;
+  padding: 7rem 0;
+
+  &__form {
+    margin: 0 auto;
+    max-width: 52rem;
+    width: 100%;
+    height: 5.6rem;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid $color-black;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    padding: 0 0.2rem;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    height: 100%;
+
+    padding-left: 2rem;
+  }
+
+  &__input:focus {
+    outline: none;
+  }
+}
+
+.Blog {
+  padding: 7rem 0;
+}

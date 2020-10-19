@@ -1,0 +1,98 @@
+@import "../../sass/abstracts/variables";
+
+.Checkout{
+   
+    
+    &__content{
+        padding: 7rem 0;
+
+        &__products{
+
+            &__list{
+                padding: 0 0 2rem 0;
+                border-bottom: 2px solid $color-black;
+                &__item{
+                   display: flex;
+                   align-items: center;
+                   margin-bottom: 2rem;
+
+                    &__image{
+                      position: relative;
+                      display: inline-block;
+                      margin-right: 1rem;
+                        &__photo{
+                            max-width: 10rem;
+                            border: 1px solid $color-black;
+                            border-radius: 1rem;
+                            overflow: hidden;
+                            & > img {
+                                width: 100%;
+                            }
+                        }
+
+                        & > span {
+                            position: absolute;
+                            top: -1rem;
+                            right: -1rem;
+                            background-color: $color-grey;
+                            padding: 1rem;
+                            border-radius: 50px;
+                            width: 3.5rem;
+                            height: 3.5rem;
+                            color: $color-white;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                  
+                    &__title{
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+
+                    &__price{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin-left: auto;
+                    }
+
+                }
+            }
+
+            &__subtotal{
+                padding: 3rem 0;
+                border-bottom: 2px solid $color-black;
+                &__title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &__text{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                    }
+
+                    &__price{
+                        font-size: 2rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &__total{
+                padding: 3rem 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & > p{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+.Modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 80vw;
+   
+    background-color: white;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+
+    &--form{
+       padding: 0 15px 3rem 15px;
+       border-radius: .5rem;
+       width: 40rem;
+    }
+}
